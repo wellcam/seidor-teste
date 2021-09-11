@@ -1,0 +1,474 @@
+{
+	"info": {
+		"_postman_id": "77108d06-8685-48cd-9ec3-c0382c14f320",
+		"name": "X - Seidor Teste Node Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Motoristas",
+			"item": [
+				{
+					"name": "Motoristas - Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Wellington Camilo\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/atualizarMotorista/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"atualizarMotorista",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Motoristas - Listar Todos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/listarMotoristas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"listarMotoristas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Motoristas - Listar Por ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/listarMotoristasPorId/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"listarMotoristasPorId",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Motoristas - Listar Por Nome",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/listarMotoristasPorNome/Wellington",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"listarMotoristasPorNome",
+								"Wellington"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Motoristas - Deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/removerMotorista/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"removerMotorista",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Motoristas - Criar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Ana Souza\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/cadastrarMotorista",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cadastrarMotorista"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Automoveis",
+			"item": [
+				{
+					"name": "Automoveis - Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cor\": \"Cinza\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/atualizarAutomovel/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"atualizarAutomovel",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Automoveis - Listar Todos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/listarAutomoveis",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"listarAutomoveis"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Automoveis - Listar Por ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/listarAutomoveisPorId/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"listarAutomoveisPorId",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Automoveis - Listar Por Cor e Marca",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/listarAutomoveisPorCorMarca/vermelho&fiat",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"listarAutomoveisPorCorMarca",
+								"vermelho&fiat"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Automoveis - Deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/removerAutomovel/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"removerAutomovel",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Automoveis - Criar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"placa\": \"VI02A18\",\n    \"cor\": \"Azul\",\n    \"marca\": \"Fiat\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/cadastrarAutomovel",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cadastrarAutomovel"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Utilizacoes",
+			"item": [
+				{
+					"name": "Utilizacoes - Listar Todos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/listarUtilizacoes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"listarUtilizacoes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Utilizacoes - Deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/removerUtilizacoes/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"removerUtilizacoes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Utilizacoes - Criar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data_inicio\": \"10/12/2021\",\n    \"data_terminio\": \"02/12/2021\",\n    \"motoristas_id\": 1,\n    \"automoveis_id\": 2,\n    \"motivo\": \"Motorista de aplicativo\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/cadastrarUtilizacao",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cadastrarUtilizacao"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
